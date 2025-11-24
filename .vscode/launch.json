@@ -1,0 +1,86 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug CLI App - Run",
+            "type": "python",
+            "request": "launch",
+            "module": "src.day4_cli.app",
+            "args": ["run", "--debug"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "stopOnEntry": false,
+            "justMyCode": true
+        },
+        {
+            "name": "Debug CLI App - Demo",
+            "type": "python",
+            "request": "launch",
+            "module": "src.day4_cli.app",
+            "args": ["demo"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "stopOnEntry": false,
+            "justMyCode": true
+        },
+        {
+            "name": "Debug CLI App - Interactive",
+            "type": "python",
+            "request": "launch",
+            "module": "src.day4_cli.app",
+            "args": ["run"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "stopOnEntry": false,
+            "justMyCode": true
+        },
+        {
+            "name": "Debug ReAct Engine",
+            "type": "python",
+            "request": "launch",
+            "module": "src.day3_core.engine",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "stopOnEntry": false,
+            "justMyCode": true
+        },
+        {
+            "name": "Debug Tools",
+            "type": "python",
+            "request": "launch",
+            "module": "src.day3_core.tools",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "stopOnEntry": false,
+            "justMyCode": true
+        },
+        {
+            "name": "Debug AI Service",
+            "type": "python",
+            "request": "launch",
+            "module": "src.ai_service",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "stopOnEntry": false,
+            "justMyCode": true
+        }
+    ]
+}
