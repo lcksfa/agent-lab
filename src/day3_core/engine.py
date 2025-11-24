@@ -121,7 +121,6 @@ class ReActEngine:
 **Thought**: [你的思考过程]
 **Action**: [工具名称]
 **Action Input**: {{参数1: "值1", 参数2: "值2"}}
-**Observation**: [工具执行结果]
 
 当你认为可以回答用户问题时，使用：
 **Final Answer**: [最终答案]
@@ -130,7 +129,7 @@ class ReActEngine:
 - 每个 "Thought" 后面必须跟着 "Action" 或 "Final Answer"
 - "Action Input" 必须是有效的 JSON 格式
 - 工具名称必须完全匹配可用工具列表
-- 仔细观察工具结果，用于指导下一步思考
+- **不要在响应中包含 Observation，Observation 会由系统提供**
 - 当有足够信息时，给出 "Final Answer"
 
 现在请开始回答用户的问题。"""
